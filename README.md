@@ -2,7 +2,7 @@
 Feed The Beast Infinity Evolved modpack
 made by Feed The Beast at https://feed-the-beast.com
 
-Modpack for Minecraft 1.7.10.
+Modpack for Minecraft 1.7.10 with Log4j CVE-2021-44228 vulnerability mitigation.</br>
 Infinity Evolved is the general all-purpose pack from the FTB team that is designed for solo play as well as small and medium population servers. The pack for all people.
 Fastcraft is enabled in this pack by default.
 
