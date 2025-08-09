@@ -15,9 +15,9 @@ WORKDIR /minecraft
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
-	wget --no-check-certificate https://api.modpacks.ch/public/modpack/23/99/server/linux -O serverinstall_23_99 && \
+ 	wget --no-check-certificate https://api.feed-the-beast.com/v1/modpacks/public/modpack/23/99/server/linux -O serverinstall_23_99 && \
 	chmod u+x serverinstall_* && \
-	./serverinstall_* --auto && \
+	./serverinstall_* --auto -force && \
 	rm serverinstall_* && \
 	echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula)." > eula.txt && \
 	echo "$(date)" >> eula.txt && \
